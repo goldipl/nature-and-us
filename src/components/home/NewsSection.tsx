@@ -32,7 +32,7 @@ const NewsSection: React.FC = () => {
       label: "wydarzenia",
       title: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque et nibh ante. Nam tincidunt urna eget nulla fringilla, sed bibendum justo facilisis.",
-      more: "czytaj więcej",
+      more: "Read more ⇨",
     },
     {
       imgSrc: newsSectionImg02.src,
