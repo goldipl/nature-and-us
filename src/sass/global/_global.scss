@@ -40,11 +40,11 @@ html.contrast-mode {
   .header-wrapper-top-right__buttons .individual-btn,
   .header-wrapper-top-right__buttons .group-btn,
   .header-wrapper-bottom .top-header__search-box,
-  .listing-btns-left .button {
+  .listing-btns-left .button,
+  .header-wrapper-top-right__buttons .header-btn,
+  .header-wrapper-top-right__text-sizes .icon,
+  .header-wrapper-top-right__contrast .icon {
     border: 1px solid $white_color;
-  }
-  #topbar.topbar .topbar-wrapper {
-    border-bottom: 1px solid $white_color;
   }
   .footer-accordions,
   .footer-wrapper-bottom {
