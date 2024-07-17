@@ -257,7 +257,7 @@ const DesktopHeader: React.FC = () => {
                 <div className="header-nav-el-wrapper">
                   <div className="header-nav-el-wrapper__col">
                     <h3>
-                      <Link href="./news">Announcements</Link>
+                      <Link href="">Announcements</Link>
                     </h3>
                   </div>
                   <div className="header-nav-el-wrapper__col">
