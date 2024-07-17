@@ -184,7 +184,7 @@ const MobileHeader: React.FC = () => {
         <div className={`mobile-menu ${isMobileMenuOpen ? "show" : ""} `}>
           <div className="mobile-menu-top">
             <div className="mobile-menu-top__left">
-              <span>Przyciski dostępności</span>
+              <span>Accessibility buttons:</span>
             </div>
             <div className="mobile-menu-top__right">
               <div className="mobile-menu-top__right__text-sizes">
