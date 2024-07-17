@@ -2,11 +2,8 @@ import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import oipipLogo from "./../../../public/icons/common/header/logo.svg";
 import whiteSearch from "./../../../public/icons/common/header/white-search.svg";
-import individualIcon from "./../../../public/icons/common/header/individual-user.svg";
-import groupIcon from "./../../../public/icons/common/header/group-users.svg";
 import contrastIcon from "./../../../public/icons/common/header/contrast.svg";
 import textIcon from "./../../../public/icons/common/header/Tt.svg";
-import bipIcon from "./../../../public/icons/common/header/bip.svg";
 import arrowNavIcon from "./../../../public/icons/common/header/chevron-down.svg";
 import Topbar from "./Topbar";
 
@@ -147,34 +144,16 @@ const DesktopHeader: React.FC = () => {
                   />
                 </div>
               </div>
-              <div className="header-wrapper-top-right__bip">
-                <Link href="">
-                  <img src={bipIcon.src} alt="bip" width={50} height={22} />
-                </Link>
-              </div>
               <div className="header-wrapper-top-right__buttons">
-                <span className="buttons-text">System składek</span>
-                <Link href="" className="group-btn">
-                  <p>
-                    <img
-                      src={groupIcon.src}
-                      alt="grupowy"
-                      width={18}
-                      height={14}
-                    />
-                    grupowy
-                  </p>
+                <span className="buttons-text">Wiadomości z:</span>
+                <Link href="" className="header-btn">
+                  <p>Polski</p>
                 </Link>
-                <Link href="" className="individual-btn">
-                  <p>
-                    <img
-                      src={individualIcon.src}
-                      alt="indywidualny"
-                      width={10}
-                      height={12}
-                    />
-                    indywidualny
-                  </p>
+                <Link href="" className="header-btn">
+                  <p>Europy</p>
+                </Link>
+                <Link href="" className="header-btn">
+                  <p>Świata</p>
                 </Link>
               </div>
             </div>

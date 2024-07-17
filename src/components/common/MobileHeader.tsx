@@ -2,9 +2,6 @@ import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import mobileLogo from "./../../../public/icons/common/mobile_header/mobile-logo.svg";
 import whiteSearch from "./../../../public/icons/common/header/white-search.svg";
-import groupIcon from "./../../../public/icons/common/header/group-users.svg";
-import individualIcon from "./../../../public/icons/common/header/individual-user.svg";
-import bipIcon from "./../../../public/icons/common/header/bip.svg";
 import contrastIcon from "./../../../public/icons/common/header/contrast.svg";
 import textIcon from "./../../../public/icons/common/header/Tt.svg";
 import Hamburger from "./Hamburger";
@@ -156,13 +153,6 @@ const MobileHeader: React.FC = () => {
             </Link>
           </div>
           <div className="mobile-header-top__right">
-            <button
-              className="health-contributions-btn"
-              onClick={toggleContributionsList}
-            >
-              <span>Składki</span>
-              <img src={groupIcon.src} alt="group" width={18} height={14} />
-            </button>
             <Hamburger onClick={toggleMobileMenu} isOpen={isMobileMenuOpen} />
           </div>
         </div>
@@ -189,37 +179,12 @@ const MobileHeader: React.FC = () => {
           className={`health-contributions-list ${
             isContributionsListOpen ? "open" : ""
           }`}
-        >
-          <div className="health-contributions-list__title">
-            <span>System składek</span>
-          </div>
-          <Link href="" className="health-contributions-list__box group">
-            <img src={groupIcon.src} alt="grupowy" width={18} height={14} />
-            <span>Grupowy</span>
-          </Link>
-          <Link href="" className="health-contributions-list__box individual">
-            <img
-              src={individualIcon.src}
-              alt="indywidualny"
-              width={10}
-              height={12}
-            />
-            <span>Indywidualny</span>
-          </Link>
-        </div>
+        ></div>
 
         <div className={`mobile-menu ${isMobileMenuOpen ? "show" : ""} `}>
           <div className="mobile-menu-top">
             <div className="mobile-menu-top__left">
-              <Link href="">
-                <span>Biuletyn Informacji Publicznej</span>
-                <img
-                  src={bipIcon.src}
-                  alt="Biuletyn Informacji Publicznej"
-                  width={43}
-                  height={19}
-                />
-              </Link>
+              <span>Przyciski dostępności</span>
             </div>
             <div className="mobile-menu-top__right">
               <div className="mobile-menu-top__right__text-sizes">
