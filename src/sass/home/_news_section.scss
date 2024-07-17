@@ -6,6 +6,54 @@
   width: 100%;
   height: 640px;
   margin: 20px auto;
+  &.square-news-section {
+    height: 310px;
+    .news-section-wrapper {
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: 1fr;
+      height: 310px;
+      .news-section-wrapper-slot {
+        .news-section-wrapper-slot__text--date {
+          p {
+            font-size: 12px;
+            font-weight: 700;
+            line-height: 14.52px;
+            text-align: left;
+          }
+        }
+        .news-section-wrapper-slot__text--title {
+          h2 {
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 21.78px;
+            text-align: left;
+            margin-top: 16px;
+            margin-bottom: 0;
+          }
+        }
+        &:nth-of-type(1) {
+          grid-area: 1 / 1 / 2 / 2;
+          height: 310px;
+          width: 310px;
+        }
+        &:nth-of-type(2) {
+          grid-area: 1 / 2 / 2 / 3;
+          height: 310px;
+          width: 310px;
+        }
+        &:nth-of-type(3) {
+          grid-area: 1 / 3 / 2 / 4;
+          height: 310px;
+          width: 310px;
+        }
+        &:nth-of-type(4) {
+          grid-area: 1 / 4 / 2 / 5;
+          height: 310px;
+          width: 310px;
+        }
+      }
+    }
+  }
   &-wrapper {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -61,11 +109,11 @@
           display: flex;
           align-items: center;
           justify-content: center;
-          padding: 10px;
+          padding: 6px 8px;
           background-color: $transparent;
           width: max-content;
           height: auto;
-          min-height: 39px;
+          min-height: 18px;
           border: 1px solid $white_color;
           z-index: 1;
           p {
@@ -180,11 +228,11 @@
           display: flex;
           align-items: center;
           justify-content: center;
-          padding: 10px;
+          padding: 6px 8px;
           background-color: $oipip_green02;
           width: max-content;
           height: auto;
-          min-height: 39px;
+          min-height: 18px;
           p {
             font-size: 12px;
             font-weight: 500;
@@ -308,10 +356,11 @@
 }
 
 @media (max-width: 760px) {
-  .news-section {
+  .news-section,
+  .news-section.square-news-section {
     height: auto;
     margin: 0 auto;
-    &-wrapper {
+    .news-section-wrapper {
       display: flex;
       flex-wrap: wrap;
       width: 100%;

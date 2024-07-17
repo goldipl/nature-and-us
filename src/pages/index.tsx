@@ -4,6 +4,7 @@ import DesktopHeader from "@/components/common/DesktopHeader";
 import NewsSection from "@/components/home/NewsSection";
 import MobileHeader from "@/components/common/MobileHeader";
 import "@/sass/main.scss";
+import SquareNewsSection from "@/components/home/SquareNewsSection";
 
 const Home = () => {
   const [isMobile, setIsMobile] = useState(false);
@@ -26,7 +27,8 @@ const Home = () => {
       {isMobile ? <MobileHeader /> : <DesktopHeader />}
       <main className="main-page">
         <NewsSection />
-        <NewsSection />
+        <SquareNewsSection />
+        <SquareNewsSection />
       </main>
       <Footer />
     </>
