@@ -6,7 +6,7 @@
   width: 44px;
   height: 43px;
   cursor: pointer;
-  border: 1px solid $grey_color16;
+  border: 1px solid $grey_color12;
   border-radius: 4px;
   background-color: $white_color;
   padding: 6px;
@@ -16,7 +16,7 @@
   .line {
     width: 26px;
     height: 4px;
-    background-color: $grey_color16;
+    background-color: $grey_color12;
     border-radius: 26px;
     transition: all 0.5s ease-in-out;
   }
