@@ -291,7 +291,7 @@ const DesktopHeader: React.FC = () => {
                 type="text"
                 name="header-searchbox"
                 id="header-searchbox"
-                placeholder="Szukaj w serwisie"
+                placeholder="Search the site"
               />
             </form>
           </div>

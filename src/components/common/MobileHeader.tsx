@@ -170,7 +170,7 @@ const MobileHeader: React.FC = () => {
               type="text"
               name="mobile-header-searchbox"
               id="mobile-header-searchbox"
-              placeholder="Szukaj w serwisie"
+              placeholder="Search the site"
             />
           </form>
         </div>
