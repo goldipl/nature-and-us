@@ -62,7 +62,7 @@
   #topbar {
     &.topbar {
       .topbar-wrapper {
-        padding: 20px 30px;
+        padding: 20px;
         align-items: flex-start;
         justify-content: flex-start;
         &__text {
@@ -79,7 +79,7 @@
         &__close-icon {
           position: absolute;
           top: 20px;
-          right: 30px;
+          right: 20px;
           img {
             margin-left: 0;
           }
