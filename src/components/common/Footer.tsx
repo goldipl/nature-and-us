@@ -116,20 +116,6 @@ const Footer = () => {
                 <p>NIP 725 10 54 451</p>
               </div>
             </div>
-            <div className="location-box">
-              <Link
-                target="_blank"
-                href="https://www.google.com/maps/dir/Emilii+Plater+34,+91-762+%C5%81%C3%B3d%C5%BA/@51.7937349,19.3909525,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x41701919f12ba4db:0xe19d020efe5a8bc5!2m2!1d19.4733929!2d51.7937621?entry=ttu"
-              >
-                <img
-                  src={locationIcon.src}
-                  alt="Lokalizacja"
-                  width={30}
-                  height={40}
-                />
-                <span>Sprawdź wskazówki dojazdu</span>
-              </Link>
-            </div>
           </div>
           <div className="footer-wrapper-top-right">
             <div className="footer-contact-full">

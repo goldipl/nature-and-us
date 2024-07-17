@@ -108,36 +108,6 @@
             }
           }
         }
-        .location-box {
-          display: flex;
-          flex-direction: row;
-          align-items: center;
-          justify-content: center;
-          background-color: $oipip_green02;
-          height: 70px;
-          margin: 0 0 40px 0;
-          a {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: center;
-            text-decoration: none;
-            width: 100%;
-            height: 100%;
-            img {
-              object-fit: contain;
-            }
-            span {
-              display: flex;
-              margin-left: 23px;
-              font-size: 16px;
-              font-weight: 400;
-              line-height: 19.36px;
-              text-align: left;
-              color: $white_color;
-            }
-          }
-        }
       }
       &-right {
         display: flex;
@@ -244,9 +214,6 @@
         &-left {
           min-width: unset;
           width: 100%;
-          .location-box {
-            margin-bottom: 0;
-          }
         }
         &-right {
           margin: 0;
@@ -335,9 +302,6 @@
         &-left {
           min-width: unset;
           width: 100%;
-          .location-box {
-            margin-bottom: 0;
-          }
         }
         &-right {
           margin: 0;
