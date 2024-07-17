@@ -18,7 +18,7 @@ class MyDocument extends Document {
         <Head>
           <link rel="icon" href="./icons/favicon.ico" />
           <link rel="apple-touch-icon" href="./icons/favicon.ico" />
-          <title>Nature and us</title>
+          <title>Nature & Us</title>
         </Head>
         <body>
           <Main />

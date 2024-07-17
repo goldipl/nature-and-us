@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Nature and us",
+  title: "Nature & Us",
   description: "Nature is beautiful",
 };
 
