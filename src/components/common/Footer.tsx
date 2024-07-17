@@ -6,65 +6,63 @@ import Link from "next/link";
 const Footer = () => {
   const accordionLeftItems = [
     {
-      title: "Biblioteka",
-      content: <p>To jest miejsce na opis dla akordeonu o tytule Biblioteka</p>,
+      title: "Forests",
+      content: <p>This is the description for the Forests accordion item</p>,
     },
     {
-      title: "Rejestr",
-      content: <p>To jest miejsce na opis dla akordeonu o tytule Rejestr</p>,
+      title: "Rivers",
+      content: <p>This is the description for the Rivers accordion item</p>,
     },
     {
-      title: "Kasa",
-      content: <p>To jest miejsce na opis dla akordeonu o tytule Kasa</p>,
+      title: "Mountains",
+      content: <p>This is the description for the Mountains accordion item</p>,
     },
     {
-      title: "Pośrednictwo pracy",
-      content: (
-        <p>To jest miejsce na opis dla akordeonu o tytule Pośrednictwo pracy</p>
-      ),
+      title: "Oceans",
+      content: <p>This is the description for the Oceans accordion item</p>,
     },
     {
-      title: "Szkolenia",
-      content: <p>To jest miejsce na opis dla akordeonu o tytule Szkolenia</p>,
+      title: "Deserts",
+      content: <p>This is the description for the Deserts accordion item</p>,
     },
   ];
 
   const accordionRightItems = [
     {
-      title: "Okręgowy Rzecznik Odpowiedzialności Zawodowej",
+      title: "Wildlife Conservation",
       content: (
         <p>
-          To jest miejsce na opis dla akordeonu o tytule Okręgowy Rzecznik
-          Odpowiedzialności Zawodowej
+          This is the description for the Wildlife Conservation accordion item
         </p>
       ),
     },
     {
-      title: "Okręgowy Sąd Pielęgniarek i Położnych",
+      title: "National Parks",
+      content: (
+        <p>This is the description for the National Parks accordion item</p>
+      ),
+    },
+    {
+      title: "Botanical Gardens",
+      content: (
+        <p>This is the description for the Botanical Gardens accordion item</p>
+      ),
+    },
+    {
+      title: "Environmental Protection",
       content: (
         <p>
-          To jest miejsce na opis dla akordeonu o tytule Okręgowy Sąd
-          Pielęgniarek i Położnych
+          This is the description for the Environmental Protection accordion
+          item
         </p>
       ),
     },
     {
-      title: "Redaktor Naczelna „Biuletynu”",
+      title: "Sustainable Practices",
       content: (
         <p>
-          To jest miejsce na opis dla akordeonu o tytule Redaktor Naczelna
-          „Biuletynu”
+          This is the description for the Sustainable Practices accordion item
         </p>
-      ),
-    },
-    {
-      title: "Prawnik",
-      content: <p>To jest miejsce na opis dla akordeonu o tytule Prawnik</p>,
-    },
-    {
-      title: "Dodatkowa zakładka",
-      content: (
-        <p>To jest miejsce na opis dla akordeonu o tytule Dodatkowa zakładka</p>
       ),
     },
   ];
@@ -75,77 +73,81 @@ const Footer = () => {
         <div className="footer-wrapper-top">
           <div className="footer-wrapper-top-left">
             <div className="contact-box">
-              <h2>Dane kontaktowe</h2>
-              <h3>Biuro OIPIP</h3>
+              <h2>Contact Information</h2>
+              <h3>Nature Office</h3>
               <div className="open-hours-box">
-                <p>W miesiącach lipiec, sierpień biuro OIPiP</p>
+                <p>In July and August, the Nature office</p>
                 <p>
-                  we wtorki czynne w godzinach: <strong>8:00-16:00</strong>
+                  is open on Tuesdays from: <strong>8:00-16:00</strong>
                 </p>
-                <p>poniedziałek: dzień bez interesantów</p>
+                <p>Monday: no visitors day</p>
                 <p>
-                  wtorek: <strong>10:00-18:00</strong>
+                  Tuesday: <strong>10:00-18:00</strong>
                 </p>
                 <p>
-                  środa-piątek: <strong>8:00-16:00</strong>
+                  Wednesday-Friday: <strong>8:00-16:00</strong>
                 </p>
               </div>
               <div className="address-box">
-                <p>Adres: 91-762 Łódź, ul. Emilii Plater 34</p>
+                <p>Address: 123 Greenway, Forest City</p>
                 <p>
-                  <span>tel.</span>
-                  <Link className="tel-link" href="tel:42 633 69 63">
-                    (42) 633 69 63
+                  <span>Phone:</span>
+                  <Link className="tel-link" href="tel:123-456-7890">
+                    (123) 456-7890
                   </Link>
-                  ; fax 633 68 74
+                  ; fax 123-456-7891
                 </p>
                 <p>
-                  <span>strona internetowa:</span>
-                  <Link href="http://www.oipp.lodz.pl">
-                    http://www.oipp.lodz.pl
+                  <span>Website:</span>
+                  <Link href="http://www.natureoffice.org">
+                    http://www.natureoffice.org
                   </Link>
                 </p>
                 <p>
-                  <span>e-mail:</span>
-                  <Link href="mailto:biuro@oipp.lodz.pl">
-                    biuro@oipp.lodz.pl
+                  <span>Email:</span>
+                  <Link href="mailto:info@natureoffice.org">
+                    info@natureoffice.org
                   </Link>
                 </p>
               </div>
               <div className="nip-box">
-                <p>NIP 725 10 54 451</p>
+                <p>NIP 123 45 6789</p>
               </div>
             </div>
           </div>
           <div className="footer-wrapper-top-right">
             <div className="footer-contact-full">
               <strong>
-                Informacji na temat realizacji zadań samorządu udzielają podczas
-                dyżuru w biurze OIPiP:
+                Information on the implementation of nature-related projects is
+                provided during duty hours at the Nature office:
               </strong>
             </div>
             <div className="footer-contact-row">
               <div className="footer-contact-row__col">
-                <p>Przewodnicząca ORPiP</p>
+                <p>Chairperson of Nature Council</p>
                 <p>
-                  <strong>Anna Kacprzak </strong>
-                  <span>tel.</span>
-                  <Link href="tel:789 459 638">789 459 638</Link>
+                  <strong>John Doe </strong>
+                  <span>Phone:</span>
+                  <Link href="tel:987-654-3210">987-654-3210</Link>
                 </p>
               </div>
               <div className="footer-contact-row__col">
-                <p>Sekretarz ORPiP</p>
+                <p>Secretary of Nature Council</p>
                 <p>
-                  <strong>Halina Gmaj-Budziarek</strong>
-                  <span> w II i IV poniedziałek miesiąca 15:00-17:00</span>
+                  <strong>Jane Smith</strong>
+                  <span>
+                    {" "}
+                    on the second and fourth Monday of the month from
+                    15:00-17:00
+                  </span>
                 </p>
                 <p>
-                  <span>e-mail:</span>
-                  <Link href="mailto:sekretarz@oipp.lodz.pl">
-                    sekretarz@oipp.lodz.pl
+                  <span>Email:</span>
+                  <Link href="mailto:secretary@natureoffice.org">
+                    secretary@natureoffice.org
                   </Link>
-                  , <span>tel.</span>
-                  <Link href="tel:42 633 22 48">(42) 633 22 48</Link>
+                  , <span>Phone:</span>
+                  <Link href="tel:123-987-6543">(123) 987-6543</Link>
                 </p>
               </div>
             </div>
@@ -160,7 +162,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="footer-wrapper-bottom">
-          <span>Wszelkie prawa zastrzeżone</span>
+          <span>Nature & Us 2024 | All rights reserved</span>
         </div>
       </div>
     </footer>
