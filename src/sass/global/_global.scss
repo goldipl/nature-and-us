@@ -45,6 +45,11 @@ html.contrast-mode {
   .header-wrapper-top-right__text-sizes .icon,
   .header-wrapper-top-right__contrast .icon {
     border: 1px solid $white_color;
+    &:hover {
+      img {
+        filter: unset;
+      }
+    }
   }
   .footer-accordions,
   .footer-wrapper-bottom {
