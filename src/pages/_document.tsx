@@ -18,7 +18,7 @@ class MyDocument extends Document {
         <Head>
           <link rel="icon" href="./icons/favicon.ico" />
           <link rel="apple-touch-icon" href="./icons/favicon.ico" />
-          <title>Okręgowa Izba Pielęgniarek i Położnych w Łodzi</title>
+          <title>Nature and us</title>
         </Head>
         <body>
           <Main />
