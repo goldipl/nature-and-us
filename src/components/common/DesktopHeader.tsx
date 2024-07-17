@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
-import oipipLogo from "./../../../public/icons/common/header/logo.svg";
+import forestLogo from "./../../../public/icons/common/header/logo.svg";
 import whiteSearch from "./../../../public/icons/common/header/white-search.svg";
 import contrastIcon from "./../../../public/icons/common/header/contrast.svg";
 import textIcon from "./../../../public/icons/common/header/Tt.svg";
@@ -116,8 +116,8 @@ const DesktopHeader: React.FC = () => {
             <div className="header-wrapper-top__logo">
               <Link href="/">
                 <img
-                  src={oipipLogo.src}
-                  alt="Okręgowa Izba Pielęgniarek i Położnych w Łodzi"
+                  src={forestLogo.src}
+                  alt="Forest and Nature Organization"
                   width={508}
                   height={68}
                 />
@@ -128,7 +128,7 @@ const DesktopHeader: React.FC = () => {
                 <div className="icon" onClick={handleResize}>
                   <img
                     src={textIcon.src}
-                    alt="Rozmiar tekstu"
+                    alt="Text Size"
                     width={26}
                     height={18}
                   />
@@ -138,22 +138,22 @@ const DesktopHeader: React.FC = () => {
                 <div className="icon" onClick={toggleContrastMode}>
                   <img
                     src={contrastIcon.src}
-                    alt="Kontrast"
+                    alt="Contrast"
                     width={18}
                     height={18}
                   />
                 </div>
               </div>
               <div className="header-wrapper-top-right__buttons">
-                <span className="buttons-text">News from:</span>
+                <span className="buttons-text">Nature News:</span>
                 <Link href="" className="header-btn">
-                  <p>Poland</p>
+                  <p>Local</p>
                 </Link>
                 <Link href="" className="header-btn">
-                  <p>Europe</p>
+                  <p>National</p>
                 </Link>
                 <Link href="" className="header-btn">
-                  <p>World</p>
+                  <p>Global</p>
                 </Link>
               </div>
             </div>
@@ -164,82 +164,81 @@ const DesktopHeader: React.FC = () => {
                 className={`header-nav-el ${activeIndex === 0 ? "active" : ""}`}
                 onClick={() => handleNavClick(0)}
               >
-                <p>OIPIP w Łodzi</p>
+                <p>Our Forests</p>
                 <img
                   src={arrowNavIcon.src}
-                  alt="strzałka"
+                  alt="arrow"
                   width={15}
                   height={15}
                 />
                 <div className="header-nav-el-wrapper">
                   <div className="header-nav-el-wrapper__col">
                     <h3>
-                      <Link href="">Władze</Link>
+                      <Link href="">Management</Link>
                     </h3>
-                    <Link href="">ORPiP</Link>
-                    <Link href="">OSPiP</Link>
-                    <Link href="">OKR</Link>
-                    <Link href="">OROZ</Link>
+                    <Link href="">Forestry Team</Link>
+                    <Link href="">Volunteers</Link>
+                    <Link href="">Conservation Projects</Link>
+                    <Link href="">Research Initiatives</Link>
                     <h3>
-                      <Link href="">Komisje i zespoły</Link>
+                      <Link href="">Committees</Link>
                     </h3>
                     <h3>
-                      <Link href="">Harmonogramy posiedzeń</Link>
+                      <Link href="">Meeting Schedules</Link>
                     </h3>
-                    <Link href="">ORPiP</Link>
-                    <Link href="">PORPiP</Link>
-                    <Link href="">Pełnomocnicy</Link>
-                    <Link href="">Kadra Kierownicza</Link>
+                    <Link href="">Advisory Board</Link>
+                    <Link href="">Partners</Link>
+                    <Link href="">Key Personnel</Link>
                   </div>
                   <div className="header-nav-el-wrapper__col">
                     <h3>
-                      <Link href="">Rejestr</Link>
+                      <Link href="">Register</Link>
                     </h3>
-                    <Link href="">Praktyki Zawodowe</Link>
-                    <Link href="">Prawo Wykonywania Zawodu</Link>
-                    <Link href="">Akty Prawne</Link>
-                    <Link href="">Pytania i odpowiedzi</Link>
+                    <Link href="">Membership</Link>
+                    <Link href="">Professional Conduct</Link>
+                    <Link href="">Legal Documents</Link>
+                    <Link href="">FAQs</Link>
                     <h3>
-                      <Link href="">Sprawy finansowe</Link>
+                      <Link href="">Financial Matters</Link>
                     </h3>
-                    <Link href="">Składki</Link>
-                    <Link href="">Dofinansowania</Link>
-                    <Link href="">Zapomogi</Link>
+                    <Link href="">Membership Fees</Link>
+                    <Link href="">Grants</Link>
+                    <Link href="">Aid</Link>
                   </div>
                   <div className="header-nav-el-wrapper__col">
                     <h3>
-                      <Link href="">KSZTAŁCENIE PODYPLOMOWE</Link>
+                      <Link href="">POSTGRADUATE EDUCATION</Link>
                     </h3>
-                    <Link href="">Rekrutacja</Link>
-                    <Link href="">Szkolenia specjalizacyjne</Link>
-                    <Link href="">Kursy kwalifikacyjne</Link>
-                    <Link href="">Kursy specjalistyczne</Link>
-                    <Link href="">Listy osób zainteresowanych</Link>
-                    <Link href="">Plan szkoleń OIPiP</Link>
-                    <Link href="">Rejestr podmiotów</Link>
+                    <Link href="">Recruitment</Link>
+                    <Link href="">Specialization Courses</Link>
+                    <Link href="">Qualification Courses</Link>
+                    <Link href="">Specialist Courses</Link>
+                    <Link href="">Interested Individuals</Link>
+                    <Link href="">Training Plans</Link>
+                    <Link href="">Registered Entities</Link>
                     <Link href="">SMK</Link>
-                    <Link href="">Pytania i odpowiedzi</Link>
+                    <Link href="">FAQs</Link>
                   </div>
                   <div className="header-nav-el-wrapper__col">
                     <h3>
-                      <Link href="">PRAWO</Link>
+                      <Link href="">LAW</Link>
                     </h3>
-                    <Link href="">Prawa i obowiązki członka samorządu</Link>
-                    <Link href="">Obowiązujące akty prawne</Link>
+                    <Link href="">Rights and Obligations</Link>
+                    <Link href="">Current Legal Acts</Link>
                     <h3>
-                      <Link href="">BIBLIOTEKA</Link>
+                      <Link href="">LIBRARY</Link>
                     </h3>
-                    <Link href="">Regulamin korzystania z zasobów</Link>
-                    <Link href="">Księgozbiór</Link>
-                    <Link href="">IBUK libra</Link>
+                    <Link href="">Usage Regulations</Link>
+                    <Link href="">Book Collection</Link>
+                    <Link href="">IBUK Libra</Link>
                     <h3>
-                      <Link href="">OŚRODEK INFORMACYJNO-EDUKACYJNY</Link>
-                    </h3>
-                    <h3>
-                      <Link href="">SIEDZIBA OIPIP</Link>
+                      <Link href="">INFORMATION & EDUCATION CENTER</Link>
                     </h3>
                     <h3>
-                      <Link href="">PLIKI DO POBRANIA</Link>
+                      <Link href="">OFFICE LOCATION</Link>
+                    </h3>
+                    <h3>
+                      <Link href="">DOWNLOADABLE FILES</Link>
                     </h3>
                   </div>
                 </div>
@@ -248,41 +247,41 @@ const DesktopHeader: React.FC = () => {
                 className={`header-nav-el ${activeIndex === 1 ? "active" : ""}`}
                 onClick={() => handleNavClick(1)}
               >
-                <p>Aktualności</p>
+                <p>Updates</p>
                 <img
                   src={arrowNavIcon.src}
-                  alt="strzałka"
+                  alt="arrow"
                   width={15}
                   height={15}
                 />
                 <div className="header-nav-el-wrapper">
                   <div className="header-nav-el-wrapper__col">
                     <h3>
-                      <Link href="./news">KOMUNIKATY</Link>
+                      <Link href="./news">Announcements</Link>
                     </h3>
                   </div>
                   <div className="header-nav-el-wrapper__col">
                     <h3>
-                      <Link href="">KONFERENCJE I SPOTKANIA</Link>
+                      <Link href="">Conferences & Meetings</Link>
                     </h3>
                   </div>
                 </div>
               </div>
               <div className="header-nav-el only-link">
-                <Link href="">Agencja pośrednictwa pracy</Link>
+                <Link href="">Job Agency</Link>
               </div>
               <div className="header-nav-el only-link">
-                <Link href="">Biuletyn</Link>
+                <Link href="">Bulletin</Link>
               </div>
               <div className="header-nav-el only-link">
-                <Link href="">Kontakt</Link>
+                <Link href="">Contact</Link>
               </div>
             </nav>
             <form className="top-header__search-box">
               <button type="submit">
                 <img
                   src={whiteSearch.src}
-                  alt="Szukaj"
+                  alt="Search"
                   width="30"
                   height="30"
                 ></img>
