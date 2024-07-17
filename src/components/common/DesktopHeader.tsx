@@ -145,15 +145,15 @@ const DesktopHeader: React.FC = () => {
                 </div>
               </div>
               <div className="header-wrapper-top-right__buttons">
-                <span className="buttons-text">Wiadomości z:</span>
+                <span className="buttons-text">News from:</span>
                 <Link href="" className="header-btn">
-                  <p>Polski</p>
+                  <p>Poland</p>
                 </Link>
                 <Link href="" className="header-btn">
-                  <p>Europy</p>
+                  <p>Europe</p>
                 </Link>
                 <Link href="" className="header-btn">
-                  <p>Świata</p>
+                  <p>World</p>
                 </Link>
               </div>
             </div>
