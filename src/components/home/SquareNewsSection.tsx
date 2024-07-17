@@ -29,7 +29,7 @@ const SquareNewsSection: React.FC = () => {
     {
       imgSrc: newsSectionImg01.src,
       date: "11.01.2024",
-      label: "wydarzenia",
+      label: "news",
       title: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
       desc: "",
       more: "",
@@ -37,7 +37,7 @@ const SquareNewsSection: React.FC = () => {
     {
       imgSrc: newsSectionImg02.src,
       date: "11.01.2024",
-      label: "wydarzenia",
+      label: "news",
       title: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
       desc: "",
       more: "",
