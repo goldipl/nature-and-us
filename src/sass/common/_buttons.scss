@@ -1,0 +1,32 @@
+.download-btn {
+  > a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: $transparent;
+    border: 1px solid $grey_color05;
+    text-decoration: none;
+    width: 118px;
+    height: 37px;
+    border-radius: 4px;
+    transition: 0.6s;
+    img {
+      display: flex;
+      width: 10px;
+      height: 12px;
+      object-fit: contain;
+      margin: 0 8px 0 0;
+    }
+    span {
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 16.94px;
+      text-align: left;
+      color: $black_color;
+    }
+    &:hover {
+      background-color: $grey_color03;
+    }
+  }
+}

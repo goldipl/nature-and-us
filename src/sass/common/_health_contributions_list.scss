@@ -1,0 +1,58 @@
+.health-contributions-list {
+  position: absolute;
+  top: 84px;
+  left: 0;
+  display: none;
+  flex-direction: column;
+  z-index: 99;
+  background-color: $white_color;
+  width: 100%;
+  height: 200dvh;
+  &.open {
+    display: flex;
+  }
+  &__title {
+    display: flex;
+    height: 69px;
+    padding: 26px 20px;
+    span {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 19.36px;
+      text-align: left;
+      color: $grey_color02;
+    }
+  }
+  &__box {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 69px;
+    padding: 26px 20px;
+    text-decoration: none;
+    cursor: pointer;
+    img {
+      display: flex;
+      margin: 0 10px 0 0;
+      object-fit: contain;
+    }
+    span {
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 16.94px;
+      text-align: left;
+    }
+    &.group {
+      background-color: $oipip_green04;
+      span {
+        color: $white_color;
+      }
+    }
+    &.individual {
+      background-color: $oipip_green05;
+      span {
+        color: $oipip_green01;
+      }
+    }
+  }
+}

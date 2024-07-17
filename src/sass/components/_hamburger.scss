@@ -1,0 +1,35 @@
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 44px;
+  height: 43px;
+  cursor: pointer;
+  border: 1px solid $grey_color16;
+  border-radius: 4px;
+  background-color: $white_color;
+  padding: 6px;
+  box-sizing: border-box;
+  transition: transform 0.5s ease-in-out;
+
+  .line {
+    width: 26px;
+    height: 4px;
+    background-color: $grey_color16;
+    border-radius: 26px;
+    transition: all 0.5s ease-in-out;
+  }
+
+  &.open {
+    .line:nth-child(1) {
+      transform: translateY(10px) rotate(45deg);
+    }
+    .line:nth-child(2) {
+      opacity: 0;
+    }
+    .line:nth-child(3) {
+      transform: translateY(-10px) rotate(-45deg);
+    }
+  }
+}
