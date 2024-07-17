@@ -275,6 +275,22 @@ const MobileMenuBox: React.FC = () => {
       <div className="mobile-menu-box__el">
         <div className="title-img-box">
           <Link className="mobile-menu-link" href="">
+            <span>Locations</span>
+          </Link>
+        </div>
+      </div>
+
+      <div className="mobile-menu-box__el">
+        <div className="title-img-box">
+          <Link className="mobile-menu-link" href="">
+            <span>Earth's climate</span>
+          </Link>
+        </div>
+      </div>
+
+      <div className="mobile-menu-box__el">
+        <div className="title-img-box">
+          <Link className="mobile-menu-link" href="">
             <span>Job Agency</span>
           </Link>
         </div>

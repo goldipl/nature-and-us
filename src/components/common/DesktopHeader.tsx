@@ -268,6 +268,12 @@ const DesktopHeader: React.FC = () => {
                 </div>
               </div>
               <div className="header-nav-el only-link">
+                <Link href="">Locations</Link>
+              </div>
+              <div className="header-nav-el only-link">
+                <Link href="">Earth's climate</Link>
+              </div>
+              <div className="header-nav-el only-link">
                 <Link href="">Job Agency</Link>
               </div>
               <div className="header-nav-el only-link">
