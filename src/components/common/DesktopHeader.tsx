@@ -271,44 +271,6 @@ const DesktopHeader: React.FC = () => {
               <div className="header-nav-el only-link">
                 <Link href="">Agencja pośrednictwa pracy</Link>
               </div>
-              <div
-                className={`header-nav-el ${activeIndex === 2 ? "active" : ""}`}
-                onClick={() => handleNavClick(2)}
-              >
-                <p>System monitorowania kształcenia</p>
-
-                <img
-                  src={arrowNavIcon.src}
-                  alt="strzałka"
-                  width={15}
-                  height={15}
-                />
-                <div className="header-nav-el-wrapper">
-                  <div className="header-nav-el-wrapper__col">
-                    <h3>
-                      <Link href="">ZAKŁADANIE KONTA</Link>
-                    </h3>
-                    <h3>
-                      <Link href="" className="short-header-link">
-                        WNIOSEK O MODYFIKACJĘ UPRAWNIEŃ I NADAWANIE ROLI
-                      </Link>
-                    </h3>
-                  </div>
-                  <div className="header-nav-el-wrapper__col">
-                    <h3>
-                      <Link href="">WNIOSEK NA SZKOLENIE</Link>
-                    </h3>
-                    <h3>
-                      <Link href="">WNIOSEK O NADANIE FUNKCJI KIEROWNIKA</Link>
-                    </h3>
-                  </div>
-                  <div className="header-nav-el-wrapper__col">
-                    <h3>
-                      <Link href="">PYTANIA I ODPOWIEDZI</Link>
-                    </h3>
-                  </div>
-                </div>
-              </div>
               <div className="header-nav-el only-link">
                 <Link href="">Biuletyn</Link>
               </div>

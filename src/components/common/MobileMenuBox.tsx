@@ -437,63 +437,6 @@ const MobileMenuBox: React.FC = () => {
         </div>
       </div>
 
-      <div className="mobile-menu-box__el" onClick={handleOuterClick(2)}>
-        <div className="title-img-box">
-          <span>System monitorowania kształcenia</span>
-          <div
-            className={`arrow-img ${
-              outerShow[2] ? "rotate-up" : "rotate-down"
-            }`}
-          >
-            <img
-              src={mobileMenyChevronDownIcon.src}
-              alt="Strzałka"
-              width={12}
-              height={7}
-            />
-          </div>
-        </div>
-        <div
-          className={`mobile-menu-box__el--inner ${outerShow[2] ? "show" : ""}`}
-        >
-          <div className="inner-wrapper">
-            <div className="title-img-box">
-              <Link className="mobile-menu-link" href="">
-                ZAKŁADANIE KONTA
-              </Link>
-            </div>
-          </div>
-          <div className="inner-wrapper">
-            <div className="title-img-box">
-              <Link className="mobile-menu-link" href="">
-                WNIOSEK O MODYFIKACJĘ UPRAWNIEŃ I NADAWANIE ROLI
-              </Link>
-            </div>
-          </div>
-          <div className="inner-wrapper">
-            <div className="title-img-box">
-              <Link className="mobile-menu-link" href="">
-                WNIOSEK NA SZKOLENIE
-              </Link>
-            </div>
-          </div>
-          <div className="inner-wrapper">
-            <div className="title-img-box">
-              <Link className="mobile-menu-link" href="">
-                WNIOSEK O NADANIE FUNKCJI KIEROWNIKA
-              </Link>
-            </div>
-          </div>
-          <div className="inner-wrapper">
-            <div className="title-img-box">
-              <Link className="mobile-menu-link" href="">
-                PYTANIA I ODPOWIEDZI
-              </Link>
-            </div>
-          </div>
-        </div>
-      </div>
-
       <div className="mobile-menu-box__el">
         <div className="title-img-box">
           <Link className="mobile-menu-link" href="">
