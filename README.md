@@ -1,3 +1,11 @@
+<p align="center">
+    <img src="./public/icons/common/header/logo.svg" height="80"/>
+</p>
+
+<h1 align="center">Nature & Us website</h1>
+
+<p align="center">Website written using modern frontend technologies like Next.js, React.js, TypeScript, Sass/SCSS.</p>
+
 ## Table of Contents
 
 - [Technologies](#technologies)
