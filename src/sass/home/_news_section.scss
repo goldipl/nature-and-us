@@ -215,7 +215,7 @@
         }
         &--date {
           display: flex;
-          margin: 0 16px 0 0;
+          order: 2;
           p {
             font-size: 16px;
             font-weight: 700;
@@ -226,6 +226,7 @@
         }
         &--label {
           display: flex;
+          order: 1;
           align-items: center;
           justify-content: center;
           padding: 6px 8px;
@@ -233,6 +234,7 @@
           width: max-content;
           height: auto;
           min-height: 18px;
+          margin: 0 16px 0 0;
           p {
             font-size: 12px;
             font-weight: 500;
