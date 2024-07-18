@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Nature & Us",
-  description: "Nature is beautiful",
+  title: "Nature & Us - Home page",
+  description:
+    "Nature is beautiful. Discover how spending time in forests can boost your mental and physical well-being",
 };
 
 export default function RootLayout({
