@@ -276,10 +276,16 @@
             font-weight: 500;
             line-height: 19.36px;
             text-align: left;
-            text-decoration: underline;
+            text-decoration: none;
             color: $white_color;
+            background-color: $transparent;
+            border: 1px solid $white_color;
+            width: max-content;
+            height: auto;
+            padding: 8px 12px;
             &:hover {
-              text-decoration: none;
+              background-color: $white_color;
+              color: $main_color02;
             }
           }
         }
