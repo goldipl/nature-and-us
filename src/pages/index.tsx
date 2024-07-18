@@ -26,8 +26,8 @@ const Home = () => {
     <>
       {isMobile ? <MobileHeader /> : <DesktopHeader />}
       <main className="main-page">
-        <NewsSection />
         <SquareNewsSection />
+        <NewsSection />
         <SquareNewsSection />
       </main>
       <Footer />
