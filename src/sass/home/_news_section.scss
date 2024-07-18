@@ -221,7 +221,7 @@
             font-weight: 700;
             line-height: 19.36px;
             text-align: left;
-            color: $oipip_green03;
+            color: $main_color03;
           }
         }
         &--label {
@@ -229,7 +229,7 @@
           align-items: center;
           justify-content: center;
           padding: 6px 8px;
-          background-color: $oipip_green02;
+          background-color: $main_color02;
           width: max-content;
           height: auto;
           min-height: 18px;
@@ -397,7 +397,7 @@
             height: 11px;
             background-color: $grey_color09;
             &-active {
-              background-color: $oipip_green04;
+              background-color: $main_color04;
             }
           }
         }

@@ -51,7 +51,7 @@
           justify-content: center;
           width: 40px;
           height: 40px;
-          background-color: $oipip_green03;
+          background-color: $main_color03;
           user-select: none;
           margin: 0 10px 0 0;
           &:hover {
@@ -100,12 +100,12 @@
             height: 40px;
             text-decoration: none;
             padding: 12px 16px;
-            background-color: $oipip_green05;
+            background-color: $main_color05;
             margin: 0 10px 0 0;
             transition: 0.3s;
             user-select: none;
             &:hover {
-              background-color: $oipip_green03;
+              background-color: $main_color03;
             }
             p {
               display: flex;
@@ -129,7 +129,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      background-color: $oipip_green01;
+      background-color: $main_color01;
       width: 100%;
       height: 62px;
       padding: 0 72px;
@@ -142,7 +142,7 @@
         display: flex;
         width: 200vw;
         height: 62px;
-        background-color: $oipip_green01;
+        background-color: $main_color01;
         z-index: -1;
       }
       .header-nav {
@@ -152,7 +152,7 @@
         justify-content: flex-start;
         height: 62px;
         width: 100%;
-        background-color: $oipip_green01;
+        background-color: $main_color01;
         &-el {
           display: flex;
           flex-direction: row;
@@ -198,7 +198,7 @@
               position: absolute;
               top: 62px;
               left: -72px;
-              background-color: $oipip_green01;
+              background-color: $main_color01;
               width: 1440px;
               padding: 48px 72px 32px 72px;
               z-index: 2;
@@ -214,7 +214,7 @@
               font-weight: 500;
               line-height: 19.36px;
               text-align: left;
-              color: $oipip_green04;
+              color: $main_color04;
               margin: 0 0 16px 0;
               text-transform: uppercase;
               > a {
@@ -222,7 +222,7 @@
                 font-weight: 500;
                 line-height: 19.36px;
                 text-align: left;
-                color: $oipip_green04;
+                color: $main_color04;
                 text-decoration: none;
                 text-transform: uppercase;
                 &:hover {
@@ -244,7 +244,7 @@
               margin: 0 0 20px 10px;
               &:hover {
                 text-shadow: 0.4px 0px 0.1px, -0.4px 0px 0.1px;
-                color: $oipip_green05;
+                color: $main_color05;
               }
             }
           }
@@ -259,7 +259,7 @@
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        background-color: $oipip_green02;
+        background-color: $main_color02;
         width: 308px;
         height: 62px;
         button {
