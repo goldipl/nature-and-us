@@ -1,30 +1,31 @@
-## Spis treści
+## Table of Contents
 
-- [Technologie](#technologie)
-- [Rozpoczęcie pracy](#rozpoczęcie-pracy)
+- [Technologies](#technologies)
+- [Getting Started](#getting-started)
+- [Screenshots](#screenshots)
 
-## Technologie
+## Technologies
 
-Użyte technologie:
+Technologies used:
 
-- biblioteka React.js w oparciu o framework Next.js
+- React.js library based on the Next.js framework
 - TypeScript
 - SASS/SCSS
 
-Użyte biblioteki:
+Libraries used:
 
 - Swiper.js
 
-## Rozpoczęcie pracy
+## Getting Started
 
-- Przejdź do folderu projektu
-- Zainstaluj zależności
+- Navigate to the project folder
+- Install dependencies
 
 ```bash
 npm i
 ```
 
-Uruchom serwer deweloperski:
+Start the development server:
 
 ```bash
 npm run dev
@@ -36,4 +37,8 @@ pnpm dev
 bun dev
 ```
 
-Otwórz http://localhost:3000 w przeglądarce, aby zobaczyć stronę.
+Open http://localhost:3000 in your browser to see the page.
+
+## Screenshots
+
+![screenshot](./screenshots/screenshot01.jpg)
