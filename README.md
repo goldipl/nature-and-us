@@ -50,3 +50,4 @@ Open http://localhost:3000 in your browser to see the page.
 ## Screenshots
 
 ![screenshot](./screenshots/screenshot01.jpg)
+![screenshot](./screenshots/screenshot02.jpg)
