@@ -10,6 +10,7 @@
 
 - [Technologies](#technologies)
 - [Getting Started](#getting-started)
+- [Live link](#live-link)
 - [Screenshots](#screenshots)
 
 ## Technologies
@@ -23,6 +24,10 @@ Technologies used:
 Libraries used:
 
 - Swiper.js
+
+## Live link
+
+- https://goldipl.github.io/nature-and-us/
 
 ## Getting Started
 
