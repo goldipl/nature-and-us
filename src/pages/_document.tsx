@@ -15,11 +15,7 @@ class MyDocument extends Document {
   render() {
     return (
       <Html lang="en">
-        <Head>
-          <link rel="icon" href="./icons/favicon.ico" />
-          <link rel="apple-touch-icon" href="./icons/favicon.ico" />
-          <title>Nature & Us - Home page</title>
-        </Head>
+        <Head />
         <body>
           <Main />
           <NextScript />

@@ -1,5 +1,6 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, FormEvent } from "react";
 import Link from "next/link";
+import { useRouter } from "next/router";
 import forestLogo from "./../../../public/icons/common/header/logo.svg";
 import whiteSearch from "./../../../public/icons/common/header/white-search.svg";
 import contrastIcon from "./../../../public/icons/common/header/contrast.svg";
@@ -17,6 +18,13 @@ const DesktopHeader: React.FC = () => {
   const [topbarHeight, setTopbarHeight] = useState(0);
   const [headerHeight, setHeaderHeight] = useState(0);
   const [isTopbarVisible, setIsTopbarVisible] = useState(true);
+  const [searchQuery, setSearchQuery] = useState("");
+  const router = useRouter();
+
+  useEffect(() => {
+    // Close the dropdown menu after navigating to another page
+    setActiveIndex(null);
+  }, [router.asPath]);
 
   useEffect(() => {
     // Function to update the heights and body padding
@@ -103,6 +111,11 @@ const DesktopHeader: React.FC = () => {
     };
   }, []);
 
+  const handleSearch = (e: FormEvent) => {
+    e.preventDefault();
+    router.push({ pathname: "/search", query: { q: searchQuery.trim() } });
+  };
+
   const handleTopbarClose = () => {
     setIsTopbarVisible(false);
   };
@@ -146,13 +159,22 @@ const DesktopHeader: React.FC = () => {
               </div>
               <div className="header-wrapper-top-right__buttons">
                 <span className="buttons-text">Nature News:</span>
-                <Link href="" className="header-btn">
+                <Link
+                  href={{ pathname: "/articles", query: { region: "local" } }}
+                  className="header-btn"
+                >
                   <p>Local</p>
                 </Link>
-                <Link href="" className="header-btn">
+                <Link
+                  href={{ pathname: "/articles", query: { region: "national" } }}
+                  className="header-btn"
+                >
                   <p>National</p>
                 </Link>
-                <Link href="" className="header-btn">
+                <Link
+                  href={{ pathname: "/articles", query: { region: "global" } }}
+                  className="header-btn"
+                >
                   <p>Global</p>
                 </Link>
               </div>
@@ -174,71 +196,71 @@ const DesktopHeader: React.FC = () => {
                 <div className="header-nav-el-wrapper">
                   <div className="header-nav-el-wrapper__col">
                     <h3>
-                      <Link href="">Management</Link>
+                      <Link href="/info/management">Management</Link>
                     </h3>
-                    <Link href="">Forestry Team</Link>
-                    <Link href="">Volunteers</Link>
-                    <Link href="">Conservation Projects</Link>
-                    <Link href="">Research Initiatives</Link>
+                    <Link href="/info/forestry-team">Forestry Team</Link>
+                    <Link href="/info/volunteers">Volunteers</Link>
+                    <Link href="/info/conservation-projects">Conservation Projects</Link>
+                    <Link href="/info/research-initiatives">Research Initiatives</Link>
                     <h3>
-                      <Link href="">Committees</Link>
+                      <Link href="/info/committees">Committees</Link>
                     </h3>
                     <h3>
-                      <Link href="">Meeting Schedules</Link>
+                      <Link href="/info/meeting-schedules">Meeting Schedules</Link>
                     </h3>
-                    <Link href="">Advisory Board</Link>
-                    <Link href="">Partners</Link>
-                    <Link href="">Key Personnel</Link>
+                    <Link href="/info/advisory-board">Advisory Board</Link>
+                    <Link href="/info/partners">Partners</Link>
+                    <Link href="/info/key-personnel">Key Personnel</Link>
                   </div>
                   <div className="header-nav-el-wrapper__col">
                     <h3>
-                      <Link href="">Register</Link>
+                      <Link href="/info/register">Register</Link>
                     </h3>
-                    <Link href="">Membership</Link>
-                    <Link href="">Professional Conduct</Link>
-                    <Link href="">Legal Documents</Link>
-                    <Link href="">FAQs</Link>
+                    <Link href="/info/membership">Membership</Link>
+                    <Link href="/info/professional-conduct">Professional Conduct</Link>
+                    <Link href="/info/legal-documents">Legal Documents</Link>
+                    <Link href="/info/faqs">FAQs</Link>
                     <h3>
-                      <Link href="">Financial Matters</Link>
+                      <Link href="/info/financial-matters">Financial Matters</Link>
                     </h3>
-                    <Link href="">Membership Fees</Link>
-                    <Link href="">Grants</Link>
-                    <Link href="">Aid</Link>
+                    <Link href="/info/membership-fees">Membership Fees</Link>
+                    <Link href="/info/grants">Grants</Link>
+                    <Link href="/info/aid">Aid</Link>
                   </div>
                   <div className="header-nav-el-wrapper__col">
                     <h3>
-                      <Link href="">POSTGRADUATE EDUCATION</Link>
+                      <Link href="/info/postgraduate-education">POSTGRADUATE EDUCATION</Link>
                     </h3>
-                    <Link href="">Recruitment</Link>
-                    <Link href="">Specialization Courses</Link>
-                    <Link href="">Qualification Courses</Link>
-                    <Link href="">Specialist Courses</Link>
-                    <Link href="">Interested Individuals</Link>
-                    <Link href="">Training Plans</Link>
-                    <Link href="">Registered Entities</Link>
-                    <Link href="">SMK</Link>
-                    <Link href="">FAQs</Link>
+                    <Link href="/info/recruitment">Recruitment</Link>
+                    <Link href="/info/specialization-courses">Specialization Courses</Link>
+                    <Link href="/info/qualification-courses">Qualification Courses</Link>
+                    <Link href="/info/specialist-courses">Specialist Courses</Link>
+                    <Link href="/info/interested-individuals">Interested Individuals</Link>
+                    <Link href="/info/training-plans">Training Plans</Link>
+                    <Link href="/info/registered-entities">Registered Entities</Link>
+                    <Link href="/info/smk">SMK</Link>
+                    <Link href="/info/postgraduate-faqs">FAQs</Link>
                   </div>
                   <div className="header-nav-el-wrapper__col">
                     <h3>
-                      <Link href="">LAW</Link>
+                      <Link href="/info/law">LAW</Link>
                     </h3>
-                    <Link href="">Rights and Obligations</Link>
-                    <Link href="">Current Legal Acts</Link>
+                    <Link href="/info/rights-and-obligations">Rights and Obligations</Link>
+                    <Link href="/info/current-legal-acts">Current Legal Acts</Link>
                     <h3>
-                      <Link href="">LIBRARY</Link>
+                      <Link href="/info/library">LIBRARY</Link>
                     </h3>
-                    <Link href="">Usage Regulations</Link>
-                    <Link href="">Book Collection</Link>
-                    <Link href="">IBUK Libra</Link>
+                    <Link href="/info/usage-regulations">Usage Regulations</Link>
+                    <Link href="/info/book-collection">Book Collection</Link>
+                    <Link href="/info/ibuk-libra">IBUK Libra</Link>
                     <h3>
-                      <Link href="">INFORMATION & EDUCATION CENTER</Link>
-                    </h3>
-                    <h3>
-                      <Link href="">OFFICE LOCATION</Link>
+                      <Link href="/info/information-and-education-center">INFORMATION & EDUCATION CENTER</Link>
                     </h3>
                     <h3>
-                      <Link href="">DOWNLOADABLE FILES</Link>
+                      <Link href="/info/office-location">OFFICE LOCATION</Link>
+                    </h3>
+                    <h3>
+                      <Link href="/info/downloadable-files">DOWNLOADABLE FILES</Link>
                     </h3>
                   </div>
                 </div>
@@ -257,33 +279,33 @@ const DesktopHeader: React.FC = () => {
                 <div className="header-nav-el-wrapper">
                   <div className="header-nav-el-wrapper__col">
                     <h3>
-                      <Link href="">Announcements</Link>
+                      <Link href="/info/announcements">Announcements</Link>
                     </h3>
                   </div>
                   <div className="header-nav-el-wrapper__col">
                     <h3>
-                      <Link href="">Conferences & Meetings</Link>
+                      <Link href="/info/conferences-and-meetings">Conferences & Meetings</Link>
                     </h3>
                   </div>
                 </div>
               </div>
               <div className="header-nav-el only-link">
-                <Link href="">Locations</Link>
+                <Link href="/info/locations">Locations</Link>
               </div>
               <div className="header-nav-el only-link">
-                <Link href="">Earth's climate</Link>
+                <Link href="/info/earths-climate">Earth's climate</Link>
               </div>
               <div className="header-nav-el only-link">
-                <Link href="">Job Agency</Link>
+                <Link href="/info/job-agency">Job Agency</Link>
               </div>
               <div className="header-nav-el only-link">
-                <Link href="">Bulletin</Link>
+                <Link href="/info/bulletin">Bulletin</Link>
               </div>
               <div className="header-nav-el only-link">
-                <Link href="">Contact</Link>
+                <Link href="/contact">Contact</Link>
               </div>
             </nav>
-            <form className="top-header__search-box">
+            <form className="top-header__search-box" onSubmit={handleSearch}>
               <button type="submit">
                 <img
                   src={whiteSearch.src}
@@ -297,6 +319,8 @@ const DesktopHeader: React.FC = () => {
                 name="header-searchbox"
                 id="header-searchbox"
                 placeholder="Search the site"
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
               />
             </form>
           </div>

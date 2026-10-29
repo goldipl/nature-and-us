@@ -1,5 +1,6 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, FormEvent } from "react";
 import Link from "next/link";
+import { useRouter } from "next/router";
 import mobileLogo from "./../../../public/icons/common/mobile_header/mobile-logo.svg";
 import whiteSearch from "./../../../public/icons/common/header/white-search.svg";
 import contrastIcon from "./../../../public/icons/common/header/contrast.svg";
@@ -19,6 +20,13 @@ const MobileHeader: React.FC = () => {
   const [topbarHeight, setTopbarHeight] = useState(0);
   const [headerHeight, setHeaderHeight] = useState(0);
   const [isTopbarVisible, setIsTopbarVisible] = useState(true);
+  const [searchQuery, setSearchQuery] = useState("");
+  const router = useRouter();
+
+  useEffect(() => {
+    // Close the mobile menu after navigating to another page
+    setIsMobileMenuOpen(false);
+  }, [router.asPath]);
 
   useEffect(() => {
     // Function to update the heights and body padding
@@ -130,6 +138,12 @@ const MobileHeader: React.FC = () => {
     };
   }, []);
 
+  const handleSearch = (e: FormEvent) => {
+    e.preventDefault();
+    setIsMobileMenuOpen(false);
+    router.push({ pathname: "/search", query: { q: searchQuery.trim() } });
+  };
+
   const handleTopbarClose = () => {
     setIsTopbarVisible(false);
   };
@@ -143,10 +157,10 @@ const MobileHeader: React.FC = () => {
       >
         <div className="mobile-header-top">
           <div className="mobile-header-top__left">
-            <Link href="./">
+            <Link href="/">
               <img
                 src={mobileLogo.src}
-                alt="Okręgowa Izba Pielęgniarek i Położnych w Łodzi"
+                alt="Nature & Us"
                 width={152}
                 height={40}
               />
@@ -157,7 +171,7 @@ const MobileHeader: React.FC = () => {
           </div>
         </div>
         <div className="mobile-header-search">
-          <form className="search-box">
+          <form className="search-box" onSubmit={handleSearch}>
             <button type="submit">
               <img
                 src={whiteSearch.src}
@@ -171,6 +185,8 @@ const MobileHeader: React.FC = () => {
               name="mobile-header-searchbox"
               id="mobile-header-searchbox"
               placeholder="Search the site"
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
             />
           </form>
         </div>

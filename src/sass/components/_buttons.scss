@@ -1,0 +1,40 @@
+.button-primary,
+.button-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: max-content;
+  padding: 12px 20px;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 19.36px;
+  text-decoration: none;
+  border: 1px solid $main_color02;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.button-primary {
+  background-color: $main_color02;
+  color: $white_color;
+  &:hover {
+    background-color: $main_color04;
+    border-color: $main_color04;
+  }
+}
+
+.button-secondary {
+  background-color: $transparent;
+  color: $main_color02;
+  &:hover {
+    background-color: $main_color02;
+    color: $white_color;
+  }
+}
+
+.all-news-link {
+  display: flex;
+  justify-content: center;
+  margin: 20px auto 48px;
+}

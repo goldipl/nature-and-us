@@ -58,5 +58,15 @@
       margin: 0 0 12px 0;
       user-select: none;
     }
+    .accordion-link {
+      align-self: flex-start;
+      font-size: 13px;
+      font-weight: 600;
+      color: $main_color02;
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
   }
 }

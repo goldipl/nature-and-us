@@ -1,0 +1,116 @@
+.article-card-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.article-card {
+  display: flex;
+  flex-direction: column;
+  background-color: $white_color;
+  border: 1px solid $grey_color07;
+  text-decoration: none;
+  transition: box-shadow 0.3s;
+  &:hover {
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    .article-card__img img {
+      transform: scale(1.08);
+    }
+    .article-card__title {
+      color: $main_color02;
+    }
+    .article-card__more {
+      background-color: $main_color02;
+      color: $white_color;
+    }
+  }
+  &__img {
+    height: 240px;
+    overflow: hidden;
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      transition: transform 0.5s;
+    }
+  }
+  &__body {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 20px;
+  }
+  &__meta {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 12px;
+    margin: 0 0 12px 0;
+  }
+  &__label {
+    padding: 6px 8px;
+    background-color: $main_color02;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 14.52px;
+    color: $white_color;
+    text-transform: uppercase;
+  }
+  &__date {
+    font-size: 14px;
+    font-weight: 700;
+    color: $main_color01;
+  }
+  &__title {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 26px;
+    color: $main_color05;
+    margin: 0 0 10px 0;
+    transition: color 0.3s;
+  }
+  &__excerpt {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    flex: 1;
+    font-size: 15px;
+    line-height: 22px;
+    color: $grey_color17;
+    margin: 0 0 16px 0;
+  }
+  &__more {
+    align-self: flex-start;
+    padding: 8px 12px;
+    border: 1px solid $main_color02;
+    font-size: 14px;
+    font-weight: 500;
+    color: $main_color02;
+    transition: 0.3s;
+  }
+}
+
+@media (max-width: 1140px) {
+  .article-card-list {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+
+@media (max-width: 760px) {
+  .article-card-list {
+    grid-template-columns: 1fr;
+  }
+  .article-card {
+    &__img {
+      height: 200px;
+    }
+    &__title {
+      font-size: 18px;
+      line-height: 24px;
+    }
+  }
+}

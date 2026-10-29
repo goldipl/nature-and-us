@@ -17,6 +17,14 @@
 // Components
 @import "./components/accordion";
 @import "./components/hamburger";
+@import "./components/buttons";
+@import "./components/article_card";
 
 // Home page
 @import "./home/news_section";
+
+// Subpages
+@import "./pages/subpage";
+@import "./pages/article";
+@import "./pages/info_page";
+@import "./pages/contact";

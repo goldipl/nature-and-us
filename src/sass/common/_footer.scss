@@ -39,10 +39,31 @@
       flex-direction: row;
       justify-content: center;
       align-items: center;
+      flex-wrap: wrap;
+      gap: 8px 32px;
       padding: 20px 0;
       background-color: $main_color01;
       width: 100%;
       z-index: 1;
+
+      .footer-links {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px 20px;
+        z-index: 1;
+
+        a {
+          font-size: 14px;
+          line-height: 16.94px;
+          color: $white_color;
+          text-decoration: none;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
 
       span {
         font-size: 14px;

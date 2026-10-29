@@ -1,0 +1,120 @@
+.contact-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.contact-details {
+  flex-shrink: 0;
+  width: 380px;
+  padding: 32px;
+  background-color: $grey_color06;
+  h2 {
+    font-size: 24px;
+    font-weight: 600;
+    color: $main_color04;
+    margin: 0 0 16px 0;
+  }
+  h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: $main_color02;
+    margin: 24px 0 12px 0;
+  }
+  p {
+    font-size: 16px;
+    line-height: 26px;
+    color: $grey_color17;
+    margin: 0 0 4px 0;
+  }
+  a {
+    color: $main_color02;
+    &.button-primary {
+      margin: 8px 0 0 0;
+      color: $white_color;
+    }
+  }
+  &__note {
+    margin: 12px 0 16px 0 !important;
+    font-size: 14px !important;
+    color: $grey_color12 !important;
+  }
+}
+
+.contact-form-box {
+  flex: 1;
+  min-width: 0;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  h2 {
+    font-size: 24px;
+    font-weight: 600;
+    color: $main_color04;
+  }
+  label {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    span {
+      font-size: 14px;
+      font-weight: 600;
+      color: $main_color05;
+    }
+  }
+  input,
+  select,
+  textarea {
+    padding: 12px 14px;
+    background-color: $white_color;
+    border: 1px solid $grey_color08;
+    font-family: inherit;
+    font-size: 16px;
+    &:focus {
+      outline: 2px solid $main_color02;
+      border-color: $main_color02;
+    }
+  }
+  textarea {
+    resize: vertical;
+  }
+}
+
+.contact-success {
+  padding: 40px;
+  background-color: $grey_color06;
+  border-left: 4px solid $main_color03;
+  h2 {
+    font-size: 24px;
+    font-weight: 600;
+    color: $main_color04;
+    margin: 0 0 12px 0;
+  }
+  p {
+    font-size: 16px;
+    line-height: 26px;
+    color: $grey_color17;
+    margin: 0 0 20px 0;
+  }
+}
+
+@media (max-width: 1140px) {
+  .contact-row {
+    flex-direction: column;
+    gap: 32px;
+  }
+  .contact-details,
+  .contact-form-box {
+    width: 100%;
+  }
+}
+
+@media (max-width: 760px) {
+  .contact-details,
+  .contact-success {
+    padding: 24px;
+  }
+}

@@ -1,36 +1,26 @@
-import React, { useState, useEffect } from "react";
-import Footer from "@/components/common/Footer";
-import DesktopHeader from "@/components/common/DesktopHeader";
+import React from "react";
+import Head from "next/head";
+import Link from "next/link";
 import NewsSection from "@/components/home/NewsSection";
-import MobileHeader from "@/components/common/MobileHeader";
-import "@/sass/main.scss";
 import SquareNewsSection from "@/components/home/SquareNewsSection";
+import { articles } from "@/data/articles";
 
 const Home = () => {
-  const [isMobile, setIsMobile] = useState(false);
-
-  useEffect(() => {
-    const handleResize = () => {
-      setIsMobile(window.innerWidth < 1280);
-    };
-
-    handleResize();
-
-    window.addEventListener("resize", handleResize);
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
-
   return (
     <>
-      {isMobile ? <MobileHeader /> : <DesktopHeader />}
+      <Head>
+        <title>Nature & Us - Home page</title>
+      </Head>
       <main className="main-page">
-        <SquareNewsSection />
-        <NewsSection />
-        <SquareNewsSection />
+        <SquareNewsSection items={articles.slice(4, 8)} />
+        <NewsSection items={articles.slice(0, 4)} />
+        <SquareNewsSection items={articles.slice(8, 12)} />
+        <div className="all-news-link">
+          <Link href="/articles" className="button-primary">
+            See all news ⇨
+          </Link>
+        </div>
       </main>
-      <Footer />
     </>
   );
 };

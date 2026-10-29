@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Link from "next/link";
 import closeIcon from "./../../../public/icons/common/topbar/close.svg";
 
 interface TopbarProps {
@@ -22,7 +23,13 @@ const Topbar = ({ onClose }: TopbarProps) => {
             Due to the extremely dry weather conditions, there is a high risk of
             fire in the forests. Please avoid any activities that could
             potentially start a fire, such as campfires or using fireworks.
-            Report any signs of fire to the authorities immediately.
+            Report any signs of fire to the authorities immediately.{" "}
+            <Link
+              href="/articles/high-fire-risk-in-forests"
+              className="topbar-wrapper__link"
+            >
+              Read more
+            </Link>
           </span>
           <span className="topbar-wrapper__close-icon" onClick={handleClose}>
             <img src={closeIcon.src} alt="Close" width={14} height={14} />

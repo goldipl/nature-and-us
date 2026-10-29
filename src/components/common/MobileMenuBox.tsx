@@ -27,6 +27,14 @@ const MobileMenuBox: React.FC = () => {
 
   return (
     <div className="mobile-menu-box">
+      <div className="mobile-menu-box__el">
+        <div className="title-img-box">
+          <Link className="mobile-menu-link" href="/articles">
+            <span>Nature News</span>
+          </Link>
+        </div>
+      </div>
+
       <div className="mobile-menu-box__el" onClick={handleOuterClick(0)}>
         <div className="title-img-box">
           <span>Our Forests</span>
@@ -68,22 +76,22 @@ const MobileMenuBox: React.FC = () => {
               }`}
             >
               <div className="inner-second__el">
-                <Link className="mobile-menu-link" href="">
+                <Link className="mobile-menu-link" href="/info/conservation-projects">
                   Conservation Projects
                 </Link>
               </div>
               <div className="inner-second__el">
-                <Link className="mobile-menu-link" href="">
+                <Link className="mobile-menu-link" href="/info/forest-monitoring">
                   Forest Monitoring
                 </Link>
               </div>
               <div className="inner-second__el">
-                <Link className="mobile-menu-link" href="">
+                <Link className="mobile-menu-link" href="/info/wildlife-protection">
                   Wildlife Protection
                 </Link>
               </div>
               <div className="inner-second__el">
-                <Link className="mobile-menu-link" href="">
+                <Link className="mobile-menu-link" href="/info/community-engagement">
                   Community Engagement
                 </Link>
               </div>
@@ -92,7 +100,7 @@ const MobileMenuBox: React.FC = () => {
 
           <div className="inner-wrapper">
             <div className="title-img-box">
-              <Link className="mobile-menu-link" href="">
+              <Link className="mobile-menu-link" href="/info/forestry-team">
                 Forestry Team
               </Link>
             </div>
@@ -120,22 +128,22 @@ const MobileMenuBox: React.FC = () => {
               }`}
             >
               <div className="inner-second__el">
-                <Link className="mobile-menu-link" href="">
+                <Link className="mobile-menu-link" href="/info/ecological-studies">
                   Ecological Studies
                 </Link>
               </div>
               <div className="inner-second__el">
-                <Link className="mobile-menu-link" href="">
+                <Link className="mobile-menu-link" href="/info/climate-impact">
                   Climate Impact
                 </Link>
               </div>
               <div className="inner-second__el">
-                <Link className="mobile-menu-link" href="">
+                <Link className="mobile-menu-link" href="/info/biodiversity-projects">
                   Biodiversity Projects
                 </Link>
               </div>
               <div className="inner-second__el">
-                <Link className="mobile-menu-link" href="">
+                <Link className="mobile-menu-link" href="/info/sustainable-practices">
                   Sustainable Practices
                 </Link>
               </div>
@@ -164,22 +172,22 @@ const MobileMenuBox: React.FC = () => {
               }`}
             >
               <div className="inner-second__el">
-                <Link className="mobile-menu-link" href="">
+                <Link className="mobile-menu-link" href="/info/workshops-and-seminars">
                   Workshops & Seminars
                 </Link>
               </div>
               <div className="inner-second__el">
-                <Link className="mobile-menu-link" href="">
+                <Link className="mobile-menu-link" href="/info/school-programs">
                   School Programs
                 </Link>
               </div>
               <div className="inner-second__el">
-                <Link className="mobile-menu-link" href="">
+                <Link className="mobile-menu-link" href="/info/public-lectures">
                   Public Lectures
                 </Link>
               </div>
               <div className="inner-second__el">
-                <Link className="mobile-menu-link" href="">
+                <Link className="mobile-menu-link" href="/info/volunteer-opportunities">
                   Volunteer Opportunities
                 </Link>
               </div>
@@ -208,22 +216,22 @@ const MobileMenuBox: React.FC = () => {
               }`}
             >
               <div className="inner-second__el">
-                <Link className="mobile-menu-link" href="">
+                <Link className="mobile-menu-link" href="/info/publications">
                   Publications
                 </Link>
               </div>
               <div className="inner-second__el">
-                <Link className="mobile-menu-link" href="">
+                <Link className="mobile-menu-link" href="/info/research-papers">
                   Research Papers
                 </Link>
               </div>
               <div className="inner-second__el">
-                <Link className="mobile-menu-link" href="">
+                <Link className="mobile-menu-link" href="/info/guidelines">
                   Guidelines
                 </Link>
               </div>
               <div className="inner-second__el">
-                <Link className="mobile-menu-link" href="">
+                <Link className="mobile-menu-link" href="/info/faqs">
                   FAQs
                 </Link>
               </div>
@@ -253,7 +261,7 @@ const MobileMenuBox: React.FC = () => {
         >
           <div className="inner-wrapper">
             <div className="title-img-box">
-              <Link className="mobile-menu-link" href="">
+              <Link className="mobile-menu-link" href="/info/announcements">
                 Announcements
               </Link>
             </div>
@@ -264,7 +272,7 @@ const MobileMenuBox: React.FC = () => {
         >
           <div className="inner-wrapper">
             <div className="title-img-box">
-              <Link className="mobile-menu-link" href="">
+              <Link className="mobile-menu-link" href="/info/conferences-and-meetings">
                 Conferences & Meetings
               </Link>
             </div>
@@ -274,7 +282,7 @@ const MobileMenuBox: React.FC = () => {
 
       <div className="mobile-menu-box__el">
         <div className="title-img-box">
-          <Link className="mobile-menu-link" href="">
+          <Link className="mobile-menu-link" href="/info/locations">
             <span>Locations</span>
           </Link>
         </div>
@@ -282,7 +290,7 @@ const MobileMenuBox: React.FC = () => {
 
       <div className="mobile-menu-box__el">
         <div className="title-img-box">
-          <Link className="mobile-menu-link" href="">
+          <Link className="mobile-menu-link" href="/info/earths-climate">
             <span>Earth's climate</span>
           </Link>
         </div>
@@ -290,7 +298,7 @@ const MobileMenuBox: React.FC = () => {
 
       <div className="mobile-menu-box__el">
         <div className="title-img-box">
-          <Link className="mobile-menu-link" href="">
+          <Link className="mobile-menu-link" href="/info/job-agency">
             <span>Job Agency</span>
           </Link>
         </div>
@@ -298,7 +306,7 @@ const MobileMenuBox: React.FC = () => {
 
       <div className="mobile-menu-box__el">
         <div className="title-img-box">
-          <Link className="mobile-menu-link" href="">
+          <Link className="mobile-menu-link" href="/info/bulletin">
             <span>Bulletin</span>
           </Link>
         </div>
@@ -306,7 +314,7 @@ const MobileMenuBox: React.FC = () => {
 
       <div className="mobile-menu-box__el">
         <div className="title-img-box">
-          <Link className="mobile-menu-link" href="">
+          <Link className="mobile-menu-link" href="/contact">
             <span>Contact</span>
           </Link>
         </div>
